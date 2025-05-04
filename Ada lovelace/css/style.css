@@ -1,0 +1,26 @@
+body {
+    background-color: #f88ed0;
+}
+
+.image {
+    float: left;
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+  }
+  .portrait {
+    float: inline-end;
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+  }
+
+  section {
+    font-size: large;
+  }
+
+  cite {
+    background-color: rgb(245, 69, 151);
+    
+  }
