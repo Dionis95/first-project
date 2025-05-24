@@ -1,0 +1,105 @@
+// Ett tärningspel där användaren ska kasta 1st tärning. 
+Vid första kastet ska målet vara 1. 
+Om 1 ej fås, ska man försöka igen. 
+Hur många kast tar det för att komma upp i en stege, 1,2,3,4,5,6?
+Kast räknas och den med lägst antal kast vinner
+
+Start
+ Set Throws to 0 
+ Set Goal to 1 (Goal is 1 to 6 in a row)
+ Repeat until last goal is reached (Goal=6)
+ For each time a new throw add +1 to Throws
+ When Goal=6
+ Print out the number of throws
+ Stop
+
+
+
+//
+    Spelet har 2st tärningar.
+    Du som spelare väljer ett “knock out number” – antingen 6, 7, 8, eller 9.
+    Spelaren kastar båda tärningarna. Anteckna varje kasts resultat.
+    Om spelaren kastar något utav "knock out numbers" ges minuspoäng
+    Efter 10 kast räknas poängen ihop, den med högst poäng vinner
+
+    //
+    Start
+    //Let the player pick one knockOutNumber = (6,7,8,9)
+       Set Counts = 0
+       Set Dice1 = (1-6)
+       Set Dice2 = (1-6)
+            Loop 10 times
+            Throw the dices and save the result in Counts
+            Counts = dice1 + dice2
+            If 
+            Counts = knockOutNumber, substract -1 from Counts
+            Else
+            Add it into Counts 
+        Print Counts
+    End    
+
+
+
+## Spelet har 3st tärningar.
+
+    Kasta tärningarna och spara tärningen med högsta värdet.
+    Kasta de kvarvarande 2 och spara tärningen med högsta värdet.
+    Kasta sista tärningen och summera samtliga tre tärningar.
+    Spelaren med högst summerat värde vinner. Max poäng är 18.
+
+    // 
+    Start 
+    Set Dice1 = (1-6)
+    Set Dice2 = (1-6)
+    Set Dice3 = (1-6)
+    Set 1stThrow = 0
+    Set 2ndThrow = 0
+    Set 3rdThrow
+    Score = 0
+          //Firt throw
+          Throws Dice1, Dice2, Dice3
+          1stThrow = highest value of (Dice1, Dice2, Dice3)
+          Remove the dice with the highest value
+
+          //Second throw
+          Throw remaining two dices
+          2ndThrow = highest value of remaining dices
+          Remove the dice with higher value
+
+          //Third throw
+          Throw the last dice
+          3rdThrow = value of last dice
+
+          Set Score = 1stThrow + 2ndThrow + 3rdThrow
+
+          Print Your score is + Score 
+
+          End 
+
+
+##           
+
+
+
+
+
+
+
+    
+
+
+        
+         
+
+
+
+
+
+      
+
+
+
+
+
+ 
+
